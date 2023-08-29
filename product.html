@@ -34,6 +34,145 @@
       </div>
     </section>
 
+    <section id="prodetails" class="section-p1">
+      <div class="single-pro-img">
+        <img
+          src="images/products/f1.jpg"
+          id="MainImg"
+          width="100%"
+          alt="main image"
+        />
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img
+              src="images/products/f1.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="images/products/f2.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="images/products/f3.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="images/products/f4.jpg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="single-pro-details">
+        <h6>Home/T-Shirt</h6>
+        <h4>Men's Fashion T Shirt</h4>
+        <h2>$139.00</h2>
+        <select>
+          <option>Select Size</option>
+          <option>Small</option>
+          <option>Large</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+        <input type="number" value="1" />
+        <button class="normal">Add To Cart</button>
+        <h4>Product Details</h4>
+        <span
+          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia quis,
+          tempore officia voluptate laudantium pariatur impedit, aliquam soluta
+          cum nemo hic quae fuga sequi dolorum suscipit exercitationem
+          doloremque ut perspiciatis Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Labore atque laborum culpa ipsa impedit quae!</span
+        >
+      </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+      <h2>Featured Products</h2>
+      <p>Summer Collection New Morder Design</p>
+      <div class="pro-card">
+        <div class="pro">
+          <img src="images/products/n1.jpg" alt="n1" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$76</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/n2.jpg" alt="n2" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$76</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/n3.jpg" alt="n3" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$76</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/n4.jpg" alt="n4" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$76</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+      </div>
+    </section>
+
     <section id="newsletter" class="section-p1" class="section-m1">
       <div class="newstext">
         <h4>Sign Up for Newsletters</h4>
@@ -100,9 +239,27 @@
       </div>
 
       <div class="copyright">
-        <p>@2023 AKN Cara Inc.</p>
+        <p>@2023 Ajaykumar Nishad E-com Inc.</p>
       </div>
     </footer>
+
+    <script>
+      let MainImg = document.getElementById("MainImg");
+      let smallimg = document.getElementsByClassName("small-img");
+
+      smallimg[0].onclick = function () {
+        MainImg.src = smallimg[0].src;
+      };
+      smallimg[1].onclick = function () {
+        MainImg.src = smallimg[1].src;
+      };
+      smallimg[2].onclick = function () {
+        MainImg.src = smallimg[2].src;
+      };
+      smallimg[3].onclick = function () {
+        MainImg.src = smallimg[3].src;
+      };
+    </script>
 
     <script src="script.js"></script>
   </body>
